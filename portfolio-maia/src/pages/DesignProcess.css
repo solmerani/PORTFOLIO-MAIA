@@ -1,0 +1,114 @@
+.design-process {
+  background-color: #f8f9f9;
+  padding: 140px 80px;
+  font-family: "Poppins", sans-serif;
+  color: #111;
+  position: relative;
+  text-align: center;
+}
+
+.process-title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+/* --- Línea principal --- */
+.process-line {
+  position: absolute;
+  top: 53%;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background-color: #111;
+  z-index: 1;
+}
+
+/* --- Contenedor de los pasos --- */
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+/* --- Cada paso --- */
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18%;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: default;
+}
+
+.process-step:hover {
+  transform: translateY(-5px);
+}
+
+/* --- Números --- */
+.process-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 45px;
+  transition: color 0.3s;
+}
+
+.process-step:hover .process-number {
+  color: #f6b9a9;
+}
+
+/* --- Puntos de conexión --- */
+.process-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #111;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  z-index: 3;
+  transition: background-color 0.3s;
+}
+
+.process-step:hover .process-dot {
+  background-color: #f6b9a9;
+}
+
+/* --- Info de cada paso --- */
+.process-info {
+  text-align: center;
+  max-width: 200px;
+}
+
+.process-title-small {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.process-desc {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1000px) {
+  .process-steps {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .process-line {
+    display: none;
+  }
+
+  .process-step {
+    width: 100%;
+  }
+
+  .process-info {
+    max-width: 300px;
+  }
+}

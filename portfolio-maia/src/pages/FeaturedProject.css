@@ -1,0 +1,77 @@
+.featured {
+  background-color: #f8f9f9;
+  padding: 120px 80px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.featured-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+
+.featured-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* --- Izquierda --- */
+.featured-left {
+  background-color: #bfbfbf;
+  border-radius: 200px 20px 20px 200px;
+  padding: 60px 50px;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #111;
+}
+
+.featured-name {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.featured-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.featured-collab {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.featured-collab span {
+  font-weight: 600;
+}
+
+/* --- Derecha --- */
+.featured-right {
+  background-color: #e3e3e3;
+  border-radius: 15px;
+  width: 500px;
+  height: 300px;
+}
+
+/* Responsivo */
+@media (max-width: 1000px) {
+  .featured-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .featured-left,
+  .featured-right {
+    width: 90%;
+    border-radius: 30px;
+  }
+}
