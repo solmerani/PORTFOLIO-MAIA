@@ -15,7 +15,7 @@ export default function Tools() {
   ];
 
   return (
-    <section className="tools">
+    <section className="tools" id="tools">
       <h2 className="tools-title">Herramientas</h2>
 
       <div className="tools-grid">

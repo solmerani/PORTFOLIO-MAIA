@@ -2,7 +2,7 @@ import "./FeaturedProject.css";
 
 export default function FeaturedProject() {
   return (
-    <section className="featured">
+    <section className="featured" id ="featured">
       <h2 className="featured-title">Proyecto destacado</h2>
 
       <div className="featured-container">

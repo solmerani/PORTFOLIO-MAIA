@@ -2,7 +2,7 @@ import "./Home.css";
 
 export default function Home() {
   return (
-   <section className="home">
+   <section className="home" id ="home">
   <div className="home-left">
     <h4 className="home-hi">¡Hola!</h4>
     <h1 className="home-name">
@@ -41,8 +41,7 @@ export default function Home() {
     </ul>
   </div>
 
-  {/* 👇 lo movemos afuera del home-right */}
-  <button className="home-menu">Menú</button>
+
 </section>
 
   );

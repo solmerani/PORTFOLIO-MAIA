@@ -30,7 +30,7 @@ export default function DesignProcess() {
   ];
 
   return (
-    <section className="design-process">
+    <section className="design-process" id="process">
       <h2 className="process-title">Mi proceso de diseño</h2>
       <div className="process-line"></div>
 
