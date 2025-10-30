@@ -13,9 +13,16 @@ export default function Home() {
       Transformo ideas en experiencias digitales simples, estéticas y funcionales.
       Combino diseño visual, estructura y empatía para crear interfaces que conectan con las personas.
     </p>
-    <button className="home-contact">
-      Contáctame <span className="arrow">→</span>
-    </button>
+    <button
+  className="contact-btn"
+  onClick={() =>
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" })
+  }
+>
+  <span>Contáctame</span>
+  <div className="arrow-circle">→</div>
+</button>
+
   </div>
 
   <div className="home-center"></div>

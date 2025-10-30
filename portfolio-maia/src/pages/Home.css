@@ -49,25 +49,40 @@
   max-width: 380px;
 }
 
-.home-contact {
-  margin-top: 35px;
+.contact-btn {
   background-color: #f6b9a9;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 25px;
   color: white;
   font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 35px;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: 0.3s;
-  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
 }
 
-.home-contact:hover {
-  opacity: 0.85;
+.contact-btn:hover {
+  background-color: #f6b9a9;
+  transform: translateY(-2px);
 }
 
-.arrow {
-  margin-left: 8px;
+
+.arrow-circle {
+  background-color: white;
+  color: #efc8b8;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 /* --- Center shape --- */

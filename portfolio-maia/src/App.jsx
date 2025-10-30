@@ -5,6 +5,7 @@ import FeaturedProject from "./pages/FeaturedProject";
 import DesignProcess from "./pages/DesignProcess";
 import Tools from "./pages/Tools";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <DesignProcess />
       <Tools />
       <About />
+      <Contact />
 
     </>
   );
