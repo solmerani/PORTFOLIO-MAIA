@@ -1,61 +1,62 @@
 .tools {
-  background-color: #f8f9f9;
   padding: 120px 80px;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
 
 .tools-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 80px;
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 35px;
 }
 
+/* CONTENEDOR */
 .tools-grid {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 90px;   /* MÁS GRANDE COMO EN TU DISEÑO */
   flex-wrap: wrap;
 }
 
+/* CÍRCULO */
 .tool-item {
-  width: 90px;
-  height: 90px;
-  background-color: #e3e3e3;
+  width: 140px;    /* AGRANDADO */
+  height: 140px;
+  background: radial-gradient(circle, #c1ecf2, #9bd3e3);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
   cursor: pointer;
-  box-shadow: 0 0 0 5px #f8f9f9, 0 0 0 10px #e3e3e3;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
 .tool-item:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 0 5px #f8f9f9, 0 0 20px rgba(0, 0, 0, 0.15);
+  transform: scale(1.08);
 }
 
+/* ICONOS */
 .tool-item img {
-  width: 45px;
-  height: 45px;
+  width: 70px;     /* ÍCONOS MÁS GRANDES */
+  height: 70px;
   object-fit: contain;
 }
 
-/* Responsivo */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .tools-grid {
     gap: 40px;
   }
 
   .tool-item {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
   }
 
   .tool-item img {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
   }
 }

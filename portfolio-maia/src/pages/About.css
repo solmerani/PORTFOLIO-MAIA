@@ -1,5 +1,4 @@
 .about {
-  background-color: #f8f9f9;
   padding: 120px 80px;
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -8,47 +7,48 @@
 
 .about-container {
   display: flex;
-  background-color: #e3e3e3;
-  border-radius: 30px;
+  background-color: #98CCD7;
+  border-radius: 40px;
   padding: 60px 80px;
-  max-width: 1100px;
+  max-width: 1200px;
   width: 100%;
   align-items: center;
-  justify-content: center;
   gap: 60px;
 }
 
+/* Imagen */
 .about-left img {
-  width: 270px;
-  height: 350px;
+  width: 320px;
+  height: 400px;
+  background-color: #9d9d9d;
+  border-radius: 25px;
   object-fit: cover;
-  border-radius: 15px;
-  background-color: #d1d1d1;
 }
 
+/* Texto */
 .about-right {
-  max-width: 600px;
-  text-align: left;
+  max-width: 580px;
   color: #111;
 }
 
 .about-right h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about-strong {
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .about-right p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.7;
-  margin-bottom: 15px;
-  color: #222;
+  margin-bottom: 12px;
 }
 
-.about-right strong {
-  font-weight: 700;
-}
-
+/* Tags */
 .about-skills {
   margin-top: 25px;
   display: flex;
@@ -57,35 +57,32 @@
 }
 
 .about-skills span {
-  background-color: #a0a0a0;
-  color: white;
-  padding: 8px 20px;
-  border-radius: 25px;
-  font-size: 0.85rem;
+  padding: 10px 22px;
+  font-size: 0.9rem;
+  border-radius: 15px;
+  border: 2px solid #e99e86;
+  background-color: transparent;
+  color: #333;
   font-weight: 500;
-  cursor: default;
-  transition: background-color 0.3s;
+  transition: 0.25s;
 }
 
 .about-skills span:hover {
-  background-color: #f6b9a9;
+  background-color: #ffe0d5;
+  border-color: #e58f70;
 }
 
-/* --- Responsivo --- */
+/* Responsive */
 @media (max-width: 950px) {
   .about-container {
     flex-direction: column;
     text-align: center;
-    padding: 60px 40px;
+    padding: 40px 30px;
   }
 
   .about-left img {
-    width: 220px;
+    width: 240px;
     height: 300px;
-  }
-
-  .about-right {
-    max-width: 100%;
   }
 
   .about-skills {

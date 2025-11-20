@@ -1,41 +1,60 @@
 import "./Contact.css";
 
-
 export default function Contact() {
   return (
-    <section id="contact" className="contact">
-      <div className="contact-card">
+    <section className="contact" id="contact">
+      <div className="contact-box">
+
+        {/* IZQUIERDA */}
         <div className="contact-left">
-          <h3>Maia Michanie</h3>
-          <h1>UX/UI Designer</h1>
-          <p>“Combino color, claridad y empatía para diseñar experiencias reales.”</p>
+          <h3 className="contact-name">Maia Michanie</h3>
+          <h1 className="contact-title">UX/UI Designer</h1>
+          <p className="contact-desc">
+            “Combino color, claridad y empatía para diseñar experiencias reales.”
+          </p>
         </div>
 
+        {/* DERECHA */}
         <div className="contact-right">
-          <div className="info-box">
-            <p>Correo electrónico</p>
-            <a href="mailto:Maiarmicha@gmail.com">Maiarmicha@gmail.com</a>
+
+          <div className="contact-item">
+            <p className="label">Correo electrónico</p>
+            <p className="value">Maiarmicha@gmail.com</p>
           </div>
-          <div className="info-box">
-            <p>LinkedIn</p>
-            <a href="https://linkedin.com/in/MaiaMichanie">@MaiaMichanie</a>
+
+          <div className="contact-item">
+            <p className="label">LinkedIn</p>
+            <p className="value">@MaiaMichanie</p>
           </div>
-          <div className="info-box">
-            <p>Instagram</p>
-            <a href="https://instagram.com/Maiamichaa">@Maiamichaa</a>
+
+          <div className="contact-item">
+            <p className="label">Instagram</p>
+            <p className="value">@Maiamichaa</p>
           </div>
-          <div className="info-box">
-            <p>Teléfono</p>
-            <span>+54 911 58053003</span>
+
+          <div className="contact-item">
+            <p className="label">Teléfono</p>
+            <p className="value">+54 911 58053003</p>
           </div>
-          <div className="info-box">
-            <p>Vocación</p>
-            <span>Diseño de páginas web</span>
+
+          <div className="contact-item">
+            <p className="label">Vocación</p>
+            <p className="value">Diseño de páginas web</p>
           </div>
-          <div className="info-box">
-            <p>Último proyecto</p>
-            <span>Zwap</span>
+
+          <div className="contact-item">
+            <p className="label">Último proyecto</p>
+            <p className="value">Zwap</p>
           </div>
+
+          <div className="contact-big">
+            <p className="label">¿Necesitás ayuda?</p>
+            <p className="value">
+              ¿Tu sitio web no refleja la calidad de tu marca? Permitirme ayudarte a
+              resolver esos desafíos con un diseño estratégico y profesional.
+            </p>
+          </div>
+
         </div>
       </div>
     </section>

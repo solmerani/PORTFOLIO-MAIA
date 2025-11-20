@@ -1,97 +1,187 @@
+/* Fondo general */
 .projects {
-  background-color: #f8f9f9;
-  padding: 100px 80px;
+  padding: 60px 80px;
   text-align: center;
   font-family: "Poppins", sans-serif;
+  min-height: 100vh;
 }
 
+/* Título */
 .projects-title {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 60px;
-  color: #222;
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 35px;
 }
+
+/* -------- FILTROS -------- */
+.projects-filters {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  margin-bottom: 50px;
+}
+
+.filter-btn {
+  background: #f0b095;
+  border: none;
+  padding: 12px 55px;
+  border-radius: 22px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+}
+
+.filter-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* -------- GRID -------- */
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-  justify-items: center;
-}
-
-.project-card {
-  background-color: #e3e3e3;
-  width: 100%;
-  height: 220px;
-  border-radius: 15px;
-  cursor: pointer;
-  display: flex;
-  align-items: flex-end;
+  grid-template-columns: repeat(3, 300px);
   justify-content: center;
-  transition: transform 0.3s ease;
+  gap: 65px 90px; /* fila / columna */
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
+/* Card */
+.project-card {
+  width: 310px;
+  height: 270px;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.25s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.project-content {
-  background-color: #555;
-  width: 100%;
-  padding: 15px;
-  border-radius: 0 0 15px 15px;
-  color: white;
-  text-align: left;
+.project-img {
+  height: 72%; /* MÁS ALTO EL GRIS */
+  background: #d9d9d9;
 }
 
-.project-content h3 {
+/* Info azul */
+.project-info {
+  background: #98CCD7;     /* azul correcto */
+  height: 28%;             /* MÁS FINO */
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 18px 18px;
+}
+
+/* Título dentro de la tarjeta */
+.project-info h3 {
+  font-size: 0.95rem;
   margin: 0;
-  font-size: 1.1rem;
+  font-weight: 700;
 }
 
-.project-content p {
-  margin: 5px 0 0 0;
-  font-size: 0.9rem;
+/* Subtítulo */
+.project-info p {
+  font-size: 0.75rem;
+  margin: 3px 0 0;
+  color: #A3A3A3;      /* gris suave como el diseño */
 }
 
-/* --- Modal --- */
+/* Botón + */
+.plus-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #E4A187; /* BORDE ROSADO */
+  background: transparent;
+  color: #E4A187;            /* SIGNO + ROSADO */
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.plus-btn:hover {
+  background: rgba(229, 166, 147, 0.15);
+}
+
+
+/* -------- MODAL CORRECTO -------- */
+
 .project-modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(2px);
   display: flex;
-  align-items: center;
   justify-content: center;
-  z-index: 1000;
+  align-items: center;
+  z-index: 900;
 }
 
+/* ⚠️ ESTO ES LO IMPORTANTE: más alto, menos ancho */
 .project-modal-content {
-  background-color: white;
-  padding: 40px;
-  border-radius: 15px;
-  width: 400px;
-  max-width: 80%;
-  text-align: center;
+  background: white;
+  width: 62%;          /* antes era 78% → demasiado ancho  */
+  height: 72%;         /* antes era 55% → demasiado chato */
+  border-radius: 32px; /* bordes más grandes como tu diseño */
+  display: grid;
+  grid-template-columns: 38% 62%;
+  padding: 55px 60px;
+  position: relative;
+  box-sizing: border-box;
 }
 
-.project-modal-content h3 {
-  margin-bottom: 10px;
-}
-
-.project-modal-content button {
+/* texto izquierda */
+.modal-left h3 {
+  font-size: 2.3rem;
+  margin-bottom: 15px;
   margin-top: 20px;
-  padding: 10px 20px;
+}
+
+.modal-left p {
+  font-size: 1.08rem;
+  line-height: 1.55;
+  width: 90%;
+  margin-top: 8px;
+}
+
+.modal-collab {
+  margin-top: 22px;
+  color: #7a7a7a;
+  font-size: 1rem;
+}
+
+/* cuadro gris */
+.modal-right {
+  background: #d9d9d9;
+  border-radius: 40px;
+  width: 95%;
+  height: 88%;
+  margin-left: 20px;
+  justify-self: center;
+  align-self: center;
+}
+
+/* botón cerrar */
+.close-modal-btn {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: #a7d7e2;
+  padding: 12px 50px;
   border: none;
-  background: #f6b9a9;
-  color: white;
-  border-radius: 25px;
+  border-radius: 18px;
+  font-size: 1.15rem;
   cursor: pointer;
   font-weight: 600;
+  transition: 0.2s;
 }
 
-.project-modal-content button:hover {
-  opacity: 0.85;
+.close-modal-btn:hover {
+  background: #98c8d4;
 }

@@ -34,10 +34,6 @@ export default function Home() {
         <p>Experiencia</p>
       </li>
       <li>
-        <strong>3</strong>
-        <p>Proyectos</p>
-      </li>
-      <li>
         <strong>Ort</strong>
         <p>Escuela</p>
       </li>

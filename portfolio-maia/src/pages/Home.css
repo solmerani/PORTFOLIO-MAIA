@@ -5,7 +5,7 @@
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background-color: #f8f9f9;
+  background-color: none;
   font-family: "Poppins", sans-serif;
   color: #222;
   padding: 0 80px;
@@ -32,7 +32,7 @@
 }
 
 .home-name span {
-  color: #f6b9a9;
+  color: #E4A086;
 }
 
 .home-role {
@@ -43,14 +43,14 @@
 
 .home-description {
   margin-top: 25px;
-  color: #555;
+  color: #657167;
   line-height: 1.7;
   font-size: 1rem;
   max-width: 380px;
 }
 
 .contact-btn {
-  background-color: #f6b9a9;
+  background-color: #E4A086;
   color: white;
   font-weight: 600;
   border: none;
@@ -67,14 +67,14 @@
 }
 
 .contact-btn:hover {
-  background-color: #f6b9a9;
+  background-color: #E4A086;
   transform: translateY(-2px);
 }
 
 
 .arrow-circle {
   background-color: white;
-  color: #efc8b8;
+  color: #E4A086;
   border-radius: 50%;
   width: 28px;
   height: 28px;
@@ -125,7 +125,7 @@
 
 .home-right p {
   font-size: 0.95rem; /* Más legible */
-  color: #777;
+  color: #657167;
   margin: 3px 0 0 0;
 }
 
