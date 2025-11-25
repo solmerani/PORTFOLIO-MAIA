@@ -1,4 +1,5 @@
 import "./FeaturedProject.css";
+import zwapImg from "../assets/swap.png"; // poné tu imagen acá
 
 export default function FeaturedProject() {
   return (
@@ -6,7 +7,7 @@ export default function FeaturedProject() {
       <h2 className="featured-title">Proyecto destacado</h2>
 
       <div className="featured-container">
-        {/* Izquierda - Descripción */}
+
         <div className="featured-left">
           <h3 className="featured-name">Zwap</h3>
           <p className="featured-desc">
@@ -20,14 +21,14 @@ export default function FeaturedProject() {
 
           <p className="featured-collab">
             Colaboradores:{" "}
-            <span>
-              Matias Vernet(Front-End), Josefina Kukiolka(Back-End)
-            </span>
+            <span>Matias Vernet(Front-End), Josefina Kukiolka(Back-End)</span>
           </p>
         </div>
 
-        {/* Derecha - Imagen / Mockup */}
-        <div className="featured-right"></div>
+        <div className="featured-right">
+          <img src={zwapImg} alt="Zwap mockup" className="featured-img" />
+        </div>
+
       </div>
     </section>
   );
