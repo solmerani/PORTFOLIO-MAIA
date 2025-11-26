@@ -13,7 +13,7 @@
   max-width: 1200px;
   width: 100%;
   align-items: center;
-  gap: 60px;
+  gap: 70px;
 }
 
 /* Imagen */
@@ -27,7 +27,7 @@
 
 /* Texto */
 .about-right {
-  max-width: 580px;
+  max-width: 600px;
   color: #111;
 }
 
@@ -39,18 +39,35 @@
 
 .about-strong {
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-.about-right p {
+/* Bloques con iconos */
+.about-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px; /* un poco más de aire para que respire como en Figma */
+}
+
+.about-item img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 3px; /* alineación exacta */
+}
+
+.about-item p {
   font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 12px;
+  line-height: 1.6;
+  margin: 0;
+  color: #111;
 }
 
 /* Tags */
 .about-skills {
-  margin-top: 25px;
+  margin-top: 28px;
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
@@ -78,11 +95,16 @@
     flex-direction: column;
     text-align: center;
     padding: 40px 30px;
+    gap: 40px;
   }
 
   .about-left img {
     width: 240px;
     height: 300px;
+  }
+
+  .about-item {
+    justify-content: center;
   }
 
   .about-skills {
