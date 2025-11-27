@@ -1,5 +1,5 @@
 import "./About.css";
-import profile from "../assets/profile.png";
+import maia from "../assets/maia.jpg";
 
 import egreso from "../assets/egreso.png";
 import pluma from "../assets/pluma.png";
@@ -18,7 +18,7 @@ export default function About() {
 
         {/* Imagen */}
         <div className="about-left">
-          <img src={profile} alt="Maia Michanie" />
+          <img src={maia} alt="Maia Michanie" />
         </div>
 
         {/* Texto */}
